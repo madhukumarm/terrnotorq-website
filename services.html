@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - TERRNOTORQ - Industrial Tools & Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0066cc',
+                        secondary: '#6b7280',
+                        background: '#ffffff',
+                        foreground: '#1f2937',
+                        muted: '#f3f4f6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb 0%, #f59e42 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="flex flex-col min-h-screen bg-gradient-to-br from-background to-muted/30">
+            <nav class="sticky top-0 z-50 shadow-lg glassmorphism">
+                <div class="container mx-auto px-4">
+                    <div class="flex items-center justify-between h-20">
+                        <a class="flex items-center space-x-2 group" href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-primary transition-transform duration-300 group-hover:rotate-12">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                            <span class="text-2xl font-bold gradient-text">TERRNOTORQ</span>
+                        </a>
+                        <div class="hidden md:flex items-center space-x-2">
+                            <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 text-foreground hover:bg-primary/10 hover:text-primary" href="index.html">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                        <polyline points="9,22 9,12 15,12 15,22"/>
+                                    </svg>
+                                    Home
+                                </div>
+                            </a>
+                            <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 text-foreground hover:bg-primary/10 hover:text-primary" href="products.html">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                        <line x1="8" y1="21" x2="16" y2="21"/>
+                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                                    </svg>
+                                    Products
+                                </div>
+                            </a>
+                            <a aria-current="page" class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 bg-primary text-white shadow-lg" href="services.html">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                    </svg>
+                                    Services
+                                </div>
+                            </a>
+                            <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 text-foreground hover:bg-primary/10 hover:text-primary" href="contact.html">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    Contact
+                                </div>
+                            </a>
+                        </div>
+                        <button class="md:hidden" id="mobile-menu-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                                <line x1="3" y1="6" x2="21" y2="6"/>
+                                <line x1="3" y1="12" x2="21" y2="12"/>
+                                <line x1="3" y1="18" x2="21" y2="18"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <div class="px-2 pt-2 pb-3 space-y-1">
+                        <a class="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-primary/10 hover:text-primary" href="index.html">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                    <polyline points="9,22 9,12 15,12 15,22"/>
+                                </svg>
+                                Home
+                            </div>
+                        </a>
+                        <a class="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-primary/10 hover:text-primary" href="products.html">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                                Products
+                            </div>
+                        </a>
+                        <a class="block px-3 py-2 rounded-md text-base font-medium text-white bg-primary" href="services.html">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                </svg>
+                                Services
+                            </div>
+                        </a>
+                        <a class="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-primary/10 hover:text-primary" href="contact.html">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Contact
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <main class="flex-1">
+                <!-- Page Header -->
+                <section class="py-20 bg-white/80 rounded-2xl shadow-md mt-6 fade-in">
+                    <div class="container mx-auto px-4 text-center">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-6">Our <span class="gradient-text">Services</span></h1>
+                        <p class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto mb-10">
+                            We provide specialized repair and support services to keep your industrial tools and hydraulic equipment in peak condition.
+                        </p>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow flex flex-col items-center">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                                    <svg class="text-primary" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Repair/Servicing of Manual Tools</h3>
+                                <p class="text-secondary text-sm">Expert repair and servicing of manual torque wrenches and precision tools.</p>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow flex flex-col items-center">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                                    <svg class="text-primary" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="12" r="10"/><path d="M12 8v8m4-4H8"/></svg>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Calibration Services</h3>
+                                <p class="text-secondary text-sm">Precision calibration for torque tools and hydraulic equipment.</p>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow flex flex-col items-center">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                                    <svg class="text-primary" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Custom Solutions</h3>
+                                <p class="text-secondary text-sm">Tailored solutions for unique industrial tool requirements.</p>
+                            </div>
+                            <!-- Add more service cards as needed -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services Grid -->
+                <section class="py-20">
+                    <div class="container mx-auto px-4">
+                        <div class="grid lg:grid-cols-1 gap-12 max-w-4xl mx-auto">
+                            <!-- Primary Service -->
+                            <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-2xl font-semibold">Repair/Servicing of Manual Tools</h3>
+                                </div>
+                                
+                                <div class="h-64 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
+                                    <div class="text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary mx-auto mb-4">
+                                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                        </svg>
+                                        <p class="text-secondary">Technician repairing a manual torque wrench</p>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-secondary mb-6 leading-relaxed text-lg">
+                                    Expert repair and servicing of manual torque wrenches and precision tools. Our experienced technicians provide comprehensive maintenance, calibration, and restoration services to ensure your tools operate at peak performance and accuracy.
+                                </p>
+                                
+                                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                    <div>
+                                        <h4 class="font-semibold mb-3">Services Include:</h4>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-3">
+                                                    <polyline points="20,6 9,17 4,12"/>
+                                                </svg>
+                                                Torque wrench calibration
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-3">
+                                                    <polyline points="20,6 9,17 4,12"/>
+                                                </svg>
+                                                Mechanism repair & replacement
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-3">
+                                                    <polyline points="20,6 9,17 4,12"/>
+                                                </svg>
+                                                Precision adjustment
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-3">
+                                                    <polyline points="20,6 9,17 4,12"/>
+                                                </svg>
+                                                Performance testing
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-3">Tool Types:</h4>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-3">
+                                                    <polyline points="20,6 9,17 4,12"/>
+                                                </svg>
+                                                Manual torque wrenches
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-3">
+                                                    <polyline points="20,6 9,17 4,12"/>
+                                                </svg>
+                                                Hydraulic tools
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-3">
+                                                    <polyline points="20,6 9,17 4,12"/>
+                                                </svg>
+                                                Torque multipliers
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 mr-3">
+                                                    <polyline points="20,6 9,17 4,12"/>
+                                                </svg>
+                                                Precision instruments
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- Footer -->
+            <footer class="bg-gray-900 text-white py-12">
+                <div class="container mx-auto px-4">
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div class="col-span-2">
+                            <div class="flex items-center space-x-2 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-primary">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                </svg>
+                                <span class="text-2xl font-bold">TERRNOTORQ</span>
+                            </div>
+                            <p class="text-gray-400 mb-4">Leading provider of industrial tools and services for professionals worldwide.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-4">Quick Links</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                                <li><a href="products.html" class="hover:text-white transition-colors">Products</a></li>
+                                <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                                <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-4">Contact Info</h4>
+                            <div class="space-y-2 text-gray-400">
+                                <p>📧 terrnotorqengservices@gmail.com</p>
+                                <p>📞 +91 9972089412 (General Enquiries)</p>
+                                <p>📞 +91 9243195432 (Support)</p>
+                                <p>📞 +91 9446750999 (TN & Kerala Region)</p>
+                                <p>📍 #65, 20th Main, 15th Cross, KP Agrahara, Near KEB Office, Bhuvaneswari Nagar, Bengaluru, Karnataka - 560023, INDIA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                        <p>&copy; 2024 TERRNOTORQ. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
